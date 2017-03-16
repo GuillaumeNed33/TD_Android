@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Book_Scanner</string>
+    <string name="scan">SCAN !</string>
+    <string name="titre">Titre :</string>
+    <string name="auteur">Auteur :</string>
+    <string name="editeur">Éditeur :</string>
+    <string name="annee">Année :</string>
+    <string name="langue">Langue :</string>
+    <string name="collection">Collection :</string>
+</resources>
