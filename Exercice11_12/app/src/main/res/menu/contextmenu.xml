@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/option1" android:title="Miroir Vertical" />
+    <item android:id="@+id/option2" android:title="Miroir Horizontal"/>
+    <item android:id="@+id/option3" android:title="Inverser Couleur" />
+    <item android:id="@+id/option4" android:title="Nuances de gris" />
+    <item android:id="@+id/option5" android:title="Charger une autre image"/>
+</menu>

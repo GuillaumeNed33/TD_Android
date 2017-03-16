@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.guillaume.exercice11.MainActivity">
+
+   <!-- <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+</menu>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="CHARGER IMAGE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loadButton"
+            android:onClick="loadImage"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_marginBottom="183dp"
+                android:id="@+id/imageView"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <Button
+                android:text="Miroir Vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verticalButton"
+                android:layout_weight="1"
+                android:onClick="verticalMirror"/>
+
+            <Button
+                android:text="Miroir Horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalButton"
+                android:layout_weight="0.77"
+                android:onClick="horizontalMirror"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="Inverser couleurs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/InvertColor"
+                android:onClick="inverserCouleur"
+                android:layout_weight="0.21" />
+
+            <Button
+                android:text="Nuances de Gris"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/GreyButton"
+                android:layout_weight="1"
+                android:onClick="blackAndWhite"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
